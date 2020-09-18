@@ -1,0 +1,165 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.whole {
+}
+
+.wrapper {
+
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 0;
+}
+
+.wrapper .Logo {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper ul li {
+    list-style: none;
+}
+
+.wrapper ul li a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+}
+
+
+header img {
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.text h1 {
+    text-align: center;
+    color: white;
+    font-size: 10vh;
+}
+
+.project .group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group img {
+    width: 25%;
+    flex: 1;
+    margin: 10px
+}
+
+.about .inside-about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.person1 img {
+    flex-wrap: wrap;
+
+    width: 70%;
+    margin: 10px;
+
+}
+
+.person1 button {
+    border: 1px solid black;
+    cursor: pointer;
+    justify-content: center;
+    background: gray;
+    color: #fff;
+    margin: 2px;
+    width: 70%;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+
+
+.box form input {
+
+    width: 100%;
+    margin: 2px;
+    padding: 10px 0;
+
+}
+
+.box input[type="submit"] {
+    cursor: pointer;
+    background: lightgray;
+    color: black;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.cover {
+    width: 100%;
+}
+
+footer {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: black;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media all and (max-width:1000px) {}
+
+@media all and (max-width:500px) {
+
+    .wrapper .Logo {
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .text h1 {
+        display: none;
+    }
+
+    .group img {
+        width: 100%;
+        margin: 4px 0;
+    }
+
+
+    .wrapper ul li a {
+        display: none;
+    }
+
+    .project .group {
+        flex-direction: column;
+    }
+
+    .about .inside-about {
+        flex-direction: column;
+    }
+}
